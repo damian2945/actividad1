@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+}
+.contenido{
+    text-align: center;
+    max-width: 120rem;
+    margin: 0 auto;
+    height: 2rem;
+    background-color: rgb(182, 234, 26);
+    
+}
