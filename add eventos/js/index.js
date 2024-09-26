@@ -12,7 +12,7 @@ boton.addEventListener('click', agregarCarta);
         <div class="card-body">
        <h5 class="card-title">${nombre}</h5>
         <p class="card-text">${lugar}</p>
-        <p class="card-text">${descripcion}}</p>
+        <p class="card-text">${descripcion}</p>
          </div>
           </div>`;
         const contenedor = document.getElementById('contenedor');
