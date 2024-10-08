@@ -13,7 +13,6 @@ const boss = document.getElementById('boss');
   <div class="card-body">
     <h5 class="card-title">${dress.title}</h5>
     <p class="card-text">$${dress.price}</p>
-    <p class="card-text">${dress.description}</p>
     
   </div>
 </div>`;
