@@ -15,13 +15,21 @@ var libro = [
         "leido": false
     }
 ];
-let dibujar = document.querySelector("#productos-container");
-dibujar.innerHTML = ``;
 
-for (let i=0; i<libro.length; i++){ 
-    dibujar.innerHTML += `<div class="col-3">
-    <p>${libro[i].titulo}</p>
-    <p>${libro[i].paginas}</p>
+function agregarTarjeta(libro) {
+    let dibujar = document.querySelector("#productos-container");
+    let tarjetaHTML = `
+        <div class="col-3">
+            <p>${libro.titulo}</p>
+            <p>${libro.paginas}</p>
+        </div> <br> <br>`;
+    dibujar.innerHTML += tarjetaHTML;
+}
 
-    </div> <br> <br>`;
+// Limpiar el contenedor antes de añadir las tarjetas
+document.querySelector("#productos-container").innerHTML = ``;
+
+// Añadir una tarjeta para cada libro en el array
+for (let i = 0; i < libro.length; i++) {
+    agregarTarjeta(libro[i]);
 }

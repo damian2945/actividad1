@@ -1,0 +1,141 @@
+.nave {
+    background-color: rgb(224, 99, 27);
+    display: flex;
+    flex-direction: column;
+
+}
+.navegacion-principal {
+    display: flex;
+    flex-direction: row;
+}
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.navegacion-principal a{
+    color: white;
+    display: flex;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+.navegacion-principal a:hover{
+    background-color: rgb(234, 123, 48);
+    color: white;
+}
+.formulario fieldset {
+    border: black;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    
+}
+.campo {
+    margin-bottom: 1rem;
+}
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.campo textarea {
+    height: 20rem;
+}
+
+.input-text {
+    width: 50%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.boton {
+    background-color: green;
+    color: black;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: arriba;
+    border-radius: 1rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    height: 2.5rem;
+    background-color: rgb(234, 123, 48);
+    width: 100%;
+    padding: 2rem;
+
+} 
+button {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+  }
+  
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+    color:white;
+  }
+  
+  button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }
+.boss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
