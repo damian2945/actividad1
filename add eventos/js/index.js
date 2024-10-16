@@ -71,3 +71,5 @@ fetch('https://jsonplaceholder.typicode.com/posts/$nombre', {
 }).catch(error => {
   console.log('Error:', error);
 });
+
+
