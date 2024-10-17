@@ -1,7 +1,5 @@
 const boton = document.getElementById('boton');
 
-
-
 boton.addEventListener('click', agregarCarta);
 
 function agregarCarta() {
