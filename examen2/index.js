@@ -1,8 +1,8 @@
      const boton = document.getElementById('boton');
-     const cont = document.getElementById('cont');
+     
 
       console.log('click');
-     fetch('#',console.log('pidiendo datos'))
+     fetch('api',console.log('pidiendo datos'))
          .then(response => response.json(), console.log('recibiendo datos'))
          .then(datos => {
         console.log(datos);
@@ -71,7 +71,7 @@ function mostrarCartas(datos) {
   
   
     const cont = document.getElementById('cont');
-    contenedor.innerHTML = html;
+    cont.innerHTML = html;
   
   }
 
